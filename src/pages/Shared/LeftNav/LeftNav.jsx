@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import LeftNavNews from "./LeftNavNews";
 
 const LeftNav = () => {
   const [categories, setCategories] = useState([]);
@@ -22,6 +23,8 @@ const LeftNav = () => {
           </p>
         ))}
       </div>
+
+      <LeftNavNews></LeftNavNews>
     </div>
   );
 };
